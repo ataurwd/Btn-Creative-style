@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .textContainer{
+            margin: 0;
+            height: auto;
+            background: transparent;
+            padding: 0;
+            border: none;
+            cursor: pointer;
+            letter-spacing: 2px;
+            text-decoration: none;
+            position: relative;
+            text-transform: uppercase;
+            color: transparent;
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6)
+        }
+        .hover{
+            position: absolute;
+            white-space: nowrap;
+            box-sizing: border-box;
+            color: rgba(0, 0, 255, 0.116);
+            width: 0%;
+            inset: 0;
+            border-right: 6px solid blue;
+            overflow: hidden;
+            transition: 0.5s;
+            -webkit-text-stroke: 1px blue;
+        }
+        .text, .hover{
+            color: white;
+            font-size: 50px;
+        }
+        .textContainer:hover .hover{
+            width: 26%;
+            /* filter: drop-shadow(0 0 23px blue); */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="textContainer">
+        <span class="text">&nbsp;hover me&nbsp;</span>
+        <span class="hover">&nbsp;hover me&nbsp;</span>
+    </div>
+</body>
+</html>
